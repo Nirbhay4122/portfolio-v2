@@ -4,9 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home | Nirbhay's portfolio</title>
 </head>
 <body>
-    
+    <!-- Header starts -->
+    <section class="header_main">
+
+        <!-- icon image -->
+        <div class="icon">
+            <img src="/elements/nsPic.jpg" alt="images missing">
+        </div>
+
+        <!-- hamberg -->
+        <div class="hambergbox">
+            <div class="hamdisplay">
+
+                <div class="hamberg" onclick="navfun()">
+                    <span id="bar-1" class="bars"></span>
+                    <span id="bar-2" class="bars"></span>
+                    <span id="bar-3" class="bars"></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- navbar starts here -->
+        <div id="navdisplay" class="navbox">
+
+            <!-- navbar -->
+            <ul class="navbar">
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-user-circle-o"></i>
+                        </span>
+                        <span>About me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </span>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-cogs"></i>
+                        </span>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-slack"></i>
+                        </span>
+                        <span>Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="navicon">
+                            <i class="fa fa-address-card"></i>
+                        </span>
+                        <span>Contacts</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- navbar ends -->
+
+    </section>
+    <!-- Header ends -->
+
+    <!-- main content starts here -->
+    <section class="maincontbox">
+
+        <div class="infobox-1">
+            <div class="text-box">
+                <div class="text-info">
+
+                    <h1>Hello,</h1>
+                    <h2>I'm Nirbhay Singh.</h2>
+                    <p>
+                        You can reach out to me if you are looking for a DevOps
+                    </p>
+                    <p>
+                        Engineer to automate your websites related to your
+                    </p>
+                    <p>business.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="infobox-2">
+            <div class="information">
+                <div class="animtextbox">
+                    <h1>I always talks about,</h1>
+                    <span class="auto-text"></span>
+                </div>
+
+                <!-- resume btn -->
+                <div class="resumebtn">
+                    <a href="#">
+                        <span class="rsmicon">
+                            <i class="fa fa-download"></i>
+                        </span>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- main contend ends -->
+
+
+    <!-- scripts starts here -->
+
+    <script>
+
+        // global variable for main function
+        var __condition = 1;
+
+        // function for hamberg button and nav bar 
+        function navfun() {
+            // variable for bars
+            const bar1 = document.getElementById("bar-1").style;
+            const bar2 = document.getElementById("bar-2").style;
+            const bar3 = document.getElementById("bar-3").style;
+            // navbar
+            const navdisplay = document.getElementById("navdisplay").style;
+            if (__condition == 1) {
+                bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 23px;";
+                bar2.display = "none";
+                bar3.cssText = "position: absolute; transform: rotate(45deg); width: 23px;";
+                // navbar
+                navdisplay.display = "block";
+                return __condition = 0;
+            }else {
+                bar1.cssText = "position: relative; transform: rotate(0deg);";
+                bar2.display = "block";
+                bar3.cssText = "position: relative; transform: rotate(0deg);";
+                // navbar
+                navdisplay.display = "none";
+                return __condition = 1;
+            }
+        }
+
+    </script>
+
+    <!-- Auto typed text scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+            var typed = new Typed(".auto-text", {
+                strings: ["DevOps !", "Web Development !", "Deploy Code !", 
+                        "Automation !", "Operations !", "CI / CD !",
+                        "Pipeline !"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+    </script>
+    <!-- Auto typed ends -->
+
+    <!-- io-icon scripts -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+    <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <!-- ion-icon ends -->
+
+    <!-- scripts ends here -->
 </body>
 </html>

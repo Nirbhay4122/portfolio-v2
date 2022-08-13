@@ -1,5 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+}
+
+body {
+    background-color: #eeeeee78;
+}
+
+/* Header style starts */
+.header_main {
+    position: fixed;
+    width: 100%;
+    height: 140px;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    padding: 5px;
+    /* background-color: #cccccc47; */
+    background-color: #70a68573;
+    border-bottom: 2px solid #70a685;
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_main div {
+    /* border: 1px solid #000; */
+}
+
+/* hamberg style starts */
+.hambergbox {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamdisplay {
+    display: none;
+}
+
+.hamberg {
+    padding: 5px;
+    /* border: 2px solid #5f815f; */
+    border-radius: 3px;
+    height: 24px;
+    width: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    position: relative;
+}
+
+.hamberg .bars {
+    display: block;
+    padding: 2px;
+    background-color: #5f815f;
+    width: 100%;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+/* hamberg style ends */
+
+/* navbar starts here */
+.navbox {
+    width: 75%;
+    height: auto;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'DynaPuff', cursive;
+}
+
+/* navbar icon */
+#navicon {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* navbar icon end */
+.navbar li {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    display: block;
+    width: auto;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.5s;
+    /* background-color: #00cff8; */
+}
+
+.navbar li a:hover {
+    background-color: #70a685;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0 0 0/30%);
+}
+
+/* navbar ends */
+
+/* icon images */
+.icon {
+    border: 2px solid #5f815f;
+    /* background-color: #fff; */
+    background-color: #70a685;
+    height: 175px;
+    width: 175px;
+    padding: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    box-shadow: 0px 0px 10px rgba(0 0 0/40%);
+    transition: 1.5s;
+}
+
+.icon:hover {
+    transform: rotate(-360deg);
+}
+
+.icon img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Header style ends */
+
+/* main content box starts here */
+.maincontbox {
+    margin-top: 142px;
+    /* border: 1px solid #5f815f; */
+    padding: 120px;
+    display: grid;
+    grid-template-areas: 'infobx2 infobx1';
+    grid-template-columns: 1fr 1fr
+}
+
+.infobox-1 {
+    grid-area: infobx1;
+    /* padding: 20px; */
+    /* border: 1px solid #5f815f; */
+}
+
+.infobox-1 .text-box {
+    height: 350px;
+    /* border: 1px solid #5f815f; */
+    box-shadow: 0px 0px 15px rgba(0 0 0/30%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #70a6858f;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.infobox-1 .text-info {
+    width: 100%;
+    /* border: 1px solid #5f815f; */
+    letter-spacing: 0.4px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 40%);
+}
+
+.infobox-1 .text-info h1 {
+    font-size: 80px;
+    /* color: #5f815f; */
+}
+
+.infobox-1 .text-info h2 {
+    font-size: 45px;
+    /* color: #5f815f; */
+    margin-top: 8px;
+}
+
+.infobox-1 .text-info p {
+    font-size: 20px;
+    /* color: #5e846d; */
+    margin-top: 4px;
+}
+
+.infobox-2 {
+    width: 100%;
+    grid-area: infobx2;
+    /* padding: 20px; */
+    /* border: 1px solid #5f815f; */
+}
+
+.infobox-2 .information {
+    width: 100%;
+    height: 350px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0 0 0/30%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    letter-spacing: 0.4px;
+    gap: 0px;
+}
+
+.infobox-2 .animtextbox {
+    /* border: 1px solid #5f815f; */
+    width: 100%;
+}
+
+.infobox-2 .animtextbox h1 {
+    font-size: 30px;
+    color: #000;
+    margin-top: 50px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 40%);
+}
+
+.infobox-2 .animtextbox span {
+    font-size: 60px;
+    /* color: #5f815f; */
+    color: #70a685e6;
+    margin-top: 50px;
+    line-height: 95px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 20%);
+}
+
+/* resume btn */
+.infobox-2 .resumebtn {
+    /* border: 1px solid #5f815f; */
+    width: 100%;
+}
+.infobox-2 .resumebtn a {
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #70a685e6;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0 0 0/30%);
+    transition: 0.5s;
+}
+
+.infobox-2 .resumebtn a:hover {
+    background-color: #70a685;
+    box-shadow: 8px 5px 14px 0px rgb(0 0 0 / 40%);
+}
+.infobox-2 .resumebtn .rsmicon {
+    margin-right: 10px;
+}
+
+/* main content ends */
+
+
+
+
+
+/* responsive for mobile view */
+@media only screen and (max-width: 768px) {
+    .header_main {
+        height: auto;
+        width: 100%;
+    }
+
+    /* hamberg */
+    .hamdisplay {
+        display: block;
+        height: auto;
+    }
+
+    /* icon image */
+    .icon {
+        height: 70px;
+        width: 75%;
+        border: none;
+        background-color: transparent;
+        border-radius: 0px;
+        box-shadow: none;
+        position: initial;
+    }
+
+    .icon img {
+        height: 100%;
+        width: 55px;
+        border-radius: 100%;
+        border: 4px solid #5f815f;
+    }
+
+    /* navbar  */
+    .navbox {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar li:nth-child(1) {
+        border-top: 1px solid #5f815f;
+    }
+
+    /* navbar ends */
+
+    /* main content box starts here */
+    .maincontbox {
+        margin-top: 90px;
+        padding: 10px;
+        height: 500px;
+    }
+
+    /* main content ends */
 }
