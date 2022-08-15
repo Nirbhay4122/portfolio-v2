@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #eeeeee78;
+    background-color: #a9a0a078;
 }
 
 /* Header style starts */
@@ -271,7 +271,7 @@ body {
 
 .latkan .circle .rod i {
     position: absolute;
-    bottom: -65%;
+    bottom: -60%;
     right: -230%;
     animation: lat 6s linear 0s infinite normal;
 }
@@ -348,7 +348,7 @@ body {
     border-bottom-left-radius: 8px;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
     letter-spacing: 0.4px;
     gap: 0px;
@@ -474,7 +474,7 @@ body {
     padding: 10px;
     font-size: 15px;
     letter-spacing: 0.5px;
-    line-height: 20px;
+    line-height: 25px;
     text-shadow: 4px 2px 5px rgb(0 0 0 / 20%);
 }
 
@@ -483,6 +483,41 @@ body {
 }
 
 /* about style ends */
+
+/* education section starts */
+
+.infobox-1 .text-box ul {
+    line-height: 25px;
+    margin: 15px;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.infobox-1 .text-box ul li {
+    margin-top: 8px;
+}
+
+.infobox-2 .information .edutable {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #ffffffeb;
+    border-spacing: 0px;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.infobox-2 .information .edutable tr, th, td {
+    background-color: #70a6858f;
+    border: 1px solid #fff;
+}
+
+/* education ends */
 
 
 
@@ -567,7 +602,8 @@ body {
     }
 
     .infobox-1 .text-box {
-        height: 250px;
+        height: fit-content;
+        border: 1px solid #5f815f;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border-bottom-left-radius: 0px;
@@ -592,7 +628,8 @@ body {
     }
 
     .infobox-2 .information {
-        height: 250px;
+        height: fit-content;
+        border: 1px solid #5f815f;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 8px;
@@ -642,5 +679,14 @@ body {
         font-size: 12px;
         padding: 5px;
     }
-    /* about ends */
+    /* about ends *//* education section starts */
+
+    .infobox-1 .text-box ul {
+        font-size: 12px;
+    }
+
+    .infobox-2 .information .edutable {
+        font-size: 12px;
+        height: 200px;
+    }
 }
