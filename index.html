@@ -672,22 +672,6 @@
     </section>
     <!-- decorartion ends -->
 
-    <!-- top bottom button -->
-    <div id="scarrow" class="scrbtnbx">
-
-        <a class="scrollbtn" href="#" onclick="scrollbx()">
-    
-            <i class="fa fa-chevron-down"></i>
-    
-        </a>
-
-    </div>
-
-    <!-- <div class="scrollbtn" onclick="scroll()">
-        <a href=""></a>
-    </div> -->
-    <!-- ends -->
-
     <!-- footer/contacts section starts here -->
 
     <section id="contact" class="footer_c">
@@ -760,29 +744,53 @@
                 <i class="fa fa-chevron-down" style="margin-left: 6px;"></i>
             </p>
             <div class="socialbtn">
-                <a href="" class="btnlink">
+                <a href="https://github.com/nirbhay4122" target="_blank" class="btnlink">
                     <i class="fa fa-github-square" style="margin-right: 8px;"></i>
                     github/nirbhay4122
                 </a>
 
-                <a href="" class="btnlink">
+                <a href="https://www.linkedin.com/in/ns35/" target="_blank" class="btnlink">
                     <i class="fa fa-linkedin-square" style="margin-right: 8px;"></i>
                     Linkedin/ns35
                 </a>
 
-                <a href="" class="btnlink">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="btnlink">
                     <i class="fa fa-envelope" style="margin-right: 8px;"></i>
                     snirbhay35@gmail.com
                 </a>
 
-                <a href="" class="btnlink">
+                <span class="btnlink">
                     <i class="fa fa-phone-square" style="margin-right: 8px;"></i>
                     +91 8090601547
-                </a>
+                </span>
             </div>
         </div>
     </section>
-    <!-- about me ends -->
+    <!-- contact me ends -->
+
+    <!-- devinfo -->
+    <div class="devinfo">
+        <p>
+            &#169; 2022 | developed & designed by : Nirbhay Singh 
+        </p>
+    </div>
+    <!-- devinfo ends -->
+
+    <!-- top bottom button -->
+    <div id="scarrow" class="scrbtnbx">
+
+        <span class="scrollbtn" onclick="scrollbx()">
+    
+            <i class="fa fa-chevron-down"></i>
+    
+        </span>
+
+    </div>
+
+    <!-- <div class="scrollbtn" onclick="scroll()">
+        <a href=""></a>
+    </div> -->
+    <!-- ends -->
 
 
 
@@ -847,12 +855,17 @@
         // scroll btn
         function scrollbx() {
             const scrollBtn = document.getElementById("scarrow").style;
+            const scrollingElement = (document.scrollingElement || document.body);
             // var id_p = "bottom";
             if (a == 1) {
                 scrollBtn.cssText = "transform: rotate(180deg);";
+                // document.body.scrollHeight = 0;
+                scrollingElement.scrollTop = scrollingElement.scrollHeight;
                 return a = 0;
             }else {
                 scrollBtn.cssText = "transform: rotate(0deg);";
+                scrollingElement.scrollTop = 0;
+                // document.body.scrollTop = 0;
                 return a = 1;
             }
         }

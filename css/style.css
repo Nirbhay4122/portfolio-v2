@@ -867,7 +867,7 @@ body {
     justify-content: center;
 }
 
-.footer_c .social_ft .socialbtn a {
+.footer_c .social_ft .socialbtn .btnlink {
     display: block;
     padding: 20px;
     border: 1px solid #5f815f;
@@ -886,13 +886,23 @@ body {
     font-size: 16px;
 }
 
-.footer_c .social_ft .socialbtn a:hover {
+.footer_c .social_ft .socialbtn .btnlink:hover {
     color: #fff;
     box-shadow: 0px 0px 15px rgba(0 0 0/50%);
 }
 
 /* footer ends here */
 
+/* devinfo */
+.devinfo {
+    background-color: #70a68580;
+    padding-bottom: 30px;
+    /* border: 1px solid #5f815f; */
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 40%);
+}
+/* devinfo ends */
 
 
 /* responsive for mobile view */
@@ -1160,12 +1170,20 @@ body {
     font-size: 13px;
     }
 
-    .footer_c .social_ft .socialbtn a {
+    .footer_c .social_ft .socialbtn .btnlink {
         width: 100%;
         font-size: 16px;
         height: 60px;
     }
 
     /* footer/contacts ends */
+
+    /* devinfo */
+
+    .devinfo {
+        font-size: 12px;
+    }
+
+    /* devinfo ends */
     
 }
