@@ -813,16 +813,32 @@
             // navbar
             const navdisplay = document.getElementById("navdisplay").style;
             if (__condition == 1) {
-                bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 23px;";
-                bar2.display = "none";
-                bar3.cssText = "position: absolute; transform: rotate(45deg); width: 23px;";
                 // navbar
+                bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 23px;";
+                bar2.cssText = "display: none; transition: none;";
+                bar3.cssText = "position: absolute; transform: rotate(45deg); width: 23px;";     
+                
+                // for display width 800+
+                if (screen.width > 800) {
+                    bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 23px; transition: none;";
+                    bar2.cssText = "display: none; transition: none;";
+                    bar3.cssText = "position: absolute; transform: rotate(45deg); width: 23px; transition: none;";
+                }
+
                 navdisplay.display = "block";
                 return __condition = 0;
             }else {
+
                 bar1.cssText = "position: relative; transform: rotate(0deg);";
                 bar2.display = "block";
                 bar3.cssText = "position: relative; transform: rotate(0deg);";
+
+                // for display width 800+
+                if (screen.width > 800) {
+                    bar1.cssText = "position: relative; transform: rotate(0deg); transition: none;";
+                    bar2.cssText = "display: block; transition: none;";
+                    bar3.cssText = "position: relative; transform: rotate(0deg); transition: none;";
+                }
                 // navbar
                 navdisplay.display = "none";
                 return __condition = 1;
