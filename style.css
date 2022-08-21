@@ -67,8 +67,9 @@ body {
 
 .hamberg .bars {
     display: block;
-    padding: 2px;
+    /* height: 2px; */
     /* background-color: #5f815f; */
+    padding: 2px;
     background-color: #fff;
     width: 100%;
     border-radius: 8px;
@@ -1186,7 +1187,7 @@ body {
     }
 
     .about .plink {
-        padding: 10px 35px 30px 35px;
+        padding: 10px 25px 30px 25px;
     }
 
     .about .plink a {

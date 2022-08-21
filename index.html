@@ -814,9 +814,9 @@
             const navdisplay = document.getElementById("navdisplay").style;
             if (__condition == 1) {
                 // navbar
-                bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 23px;";
+                bar1.cssText = "position: absolute; transform: rotate(-45deg); width: 24px;";
                 bar2.cssText = "display: none; transition: none;";
-                bar3.cssText = "position: absolute; transform: rotate(45deg); width: 23px;";     
+                bar3.cssText = "position: absolute; transform: rotate(45deg); width: 24px;";    
                 
                 // for display width 800+
                 if (screen.width > 800) {
@@ -853,14 +853,14 @@
             if (img == 1) {
 
                 if (screen.width < 500){
-                    zoomin.cssText = "height: 35%; width: 95%;";
+                    zoomin.cssText = "height: 30%; width: 95%;";
 
                 }else{
                     zoomin.cssText = "height: 80%; width: 80%";
 
                 }
                 entire.cssText = "position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; z-index: 999999; display: flex; justify-content: center; align-items: center; background-color: rgba(0 0 0/85%);";
-                // alert(screen.width);
+                alert(screen.width);
                 return img = 0;
 
             }else {
