@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DynaPuff', cursive;
 }
 
 html {
@@ -14,6 +14,7 @@ html {
 
 body {
     background-color: #a9a0a078;
+    font-family: 'DynaPuff', cursive;
 }
 
 /* Header style starts */
@@ -136,6 +137,7 @@ body {
 }
 
 .navbar li a:hover {
+    /* border: 1px solid #5f815f; */
     background-color: #70a685;
     color: #fff;
     box-shadow: 0px 0px 10px rgba(0 0 0/30%);
@@ -745,6 +747,46 @@ body {
     margin: 0px 8px;
 }
 
+.about .warning {
+    display: block;
+    border: 1px solid #5f815f;
+    padding: 10px;
+    /* width: 100%; */
+    /* height: 50px; */
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #ccc;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-shadow: 4px 2px 5px rgb(0 0 0 / 40%);
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 40%);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about .warning #closebtn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: transparent;
+    outline: none;
+    /* border: 1px solid #5f815f; */
+    border: none;
+    /* padding: 5px; */
+    height: 25px;
+    width: 25px;
+    /* font-size: 20px; */
+    color: #5f815f;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.about .warning #closebtn:hover {
+    background-color: #ff6e6e9e;
+    /* background-color: red; */
+    color: #fff;
+}
+
 .about .describe {
     border: 1px solid #5f815f;
     height: auto;
@@ -954,6 +996,10 @@ body {
         padding: 60px 50px;
     }
 
+    .about .warning {
+        font-size: 15px;
+    }
+
     .footer_c {
         padding: 50px 30px;
         gap: 10px;
@@ -1135,6 +1181,10 @@ body {
     .about .aboutme .aboutsec {
         font-size: 12px;
         padding: 5px;
+    }
+
+    .about .warning {
+        font-size: 12px;
     }
     /* about ends */
     

@@ -606,6 +606,21 @@
                 </a>
             </div>
 
+            <!-- warning! -->
+
+            <div id="closewr" class="warning">
+                <!-- close button -->
+                <button id="closebtn" title="close warning!" onclick="closewarning()">
+                    <i class="fa fa-times"></i>
+                </button>
+                <!-- warning message -->
+                <p>
+                    <span style="color: red;">Warning!</span>
+                    <br>
+                    <span>Working sections are >> BHU & IIT JAM ( Others are under Development )</span>
+                </p>
+            </div>
+
             <div class="describe">
                 <h3>Description :</h3>
                 <ul class="prdes">
@@ -869,6 +884,12 @@
                 return img = 1;
 
             }
+        }
+
+        // close warning
+
+        function closewarning() {
+            document.getElementById('closewr').style.display = "none";
         }
 
         // scroll btn
