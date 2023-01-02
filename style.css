@@ -108,6 +108,7 @@ body {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
+
 .navbar li:hover #navicon {
     transform: rotate(360deg);
     /* animation: chakra 1s linear 0s infinite normal; */
@@ -223,8 +224,13 @@ body {
 }
 
 @keyframes chakra {
-  0%   {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Header style ends */
@@ -257,15 +263,19 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(-45deg);
     }
+
     50% {
         transform: rotate(0deg);
     }
+
     75% {
         transform: rotate(45deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -289,6 +299,7 @@ body {
     right: -230%;
     animation: lat 6s linear 0s infinite normal;
 }
+
 /* latkan ends */
 
 
@@ -368,7 +379,7 @@ body {
     /* justify-content: center; */
     letter-spacing: 0.4px;
     gap: 0px;
- 
+
 }
 
 .infobox-2 .animtextbox {
@@ -384,7 +395,7 @@ body {
 }
 
 .infobox-2 .animtextbox span {
-    font-size: 60px;
+    font-size: 50px;
     color: #70a685;
     margin-top: 50px;
     line-height: 95px;
@@ -396,6 +407,7 @@ body {
     /* border: 1px solid #5f815f; */
     width: 100%;
 }
+
 .infobox-2 .resumebtn a {
     display: block;
     border: 1px solid #5f815f;
@@ -419,6 +431,7 @@ body {
     background-color: #70a685;
     box-shadow: 8px 5px 14px 0px rgb(0 0 0 / 40%);
 }
+
 .infobox-2 .resumebtn .rsmicon {
     margin-right: 10px;
 }
@@ -438,6 +451,7 @@ body {
 .decoration span {
     animation: chakra 1.5s linear 0s infinite normal;
 }
+
 /* decoration ends */
 
 
@@ -551,7 +565,9 @@ body {
     text-shadow: 4px 2px 5px rgb(0 0 0 / 20%);
 }
 
-.infobox-2 .information .edutable tr, th, td {
+.infobox-2 .information .edutable tr,
+th,
+td {
     background-color: #70a6858f;
     border: 1px solid #fff;
 }
@@ -745,6 +761,7 @@ body {
     background-color: #70a685;
     box-shadow: 0px 0px 25px rgb(0 0 0 / 40%);
 }
+
 .about .plink a i {
     margin: 0px 8px;
 }
@@ -868,7 +885,8 @@ body {
     grid-template-columns: 5fr 15fr;
 }
 
-.footer_c .quicklink, .social_ft {
+.footer_c .quicklink,
+.social_ft {
     border: 1px solid #5f815f;
     padding: 10px;
     box-shadow: 0px 0px 15px rgba(0 0 0/30%);
@@ -974,9 +992,10 @@ body {
     text-align: center;
     text-shadow: 4px 2px 5px rgb(0 0 0 / 40%);
 }
+
 /* devinfo ends */
 
-                /* responsive css starts here */
+/* responsive css starts here */
 
 /* responsive for tab view */
 
@@ -1120,13 +1139,13 @@ body {
         font-size: 50px;
         /* color: #5f815f; */
     }
-    
+
     .infobox-1 .text-info h2 {
         font-size: 32px;
         /* color: #5f815f; */
         margin-top: 8px;
     }
-    
+
     .infobox-1 .text-info p {
         font-size: 12px;
         /* color: #5e846d; */
@@ -1156,12 +1175,14 @@ body {
         font-size: 12px;
         padding: 8px 15px;
     }
+
     /* main content ends */
 
     /* decoration */
     .decoration {
         font-size: 15px;
     }
+
     /* decoration ends */
 
     /* about section starts */
@@ -1189,8 +1210,9 @@ body {
     .about .warning {
         font-size: 12px;
     }
+
     /* about ends */
-    
+
     /* education section starts */
 
     .infobox-1 .text-box #head-edu {
@@ -1228,7 +1250,7 @@ body {
         gap: 10px;
         padding: 15px 0px;
     }
-    
+
     .about .primg .images {
         height: 100%;
         border: 3px solid #fff;
@@ -1280,7 +1302,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .footer_c .quicklink, .social_ft {
+    .footer_c .quicklink,
+    .social_ft {
         width: 100%;
     }
 
@@ -1289,11 +1312,11 @@ body {
     }
 
     .footer_c .social_ft p {
-    top: -14px;
-    left: 10%;
-    padding: 5px;
-    width: 105px;
-    font-size: 13px;
+        top: -14px;
+        left: 10%;
+        padding: 5px;
+        width: 105px;
+        font-size: 13px;
     }
 
     .footer_c .social_ft .socialbtn {
@@ -1316,7 +1339,7 @@ body {
     }
 
     /* devinfo ends */
-    
+
 }
 
 /* Mobile view ends */
